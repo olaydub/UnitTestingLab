@@ -71,7 +71,21 @@ public class CILabTest {
         myString.setString("LOL");
         assertEquals(true, myString.detectCapitalUse());
     }
-    
+
+    //This test checks a string with a single character
+    @Test
+    public void detectCapitalUseTest8() {
+        myString.setString("L");
+        assertEquals(true, myString.detectCapitalUse());
+    }
+
+    //This test checks a string with only the first character as a capital
+    @Test
+    public void detectCapitalUseTest9() {
+        myString.setString("Onlyfirst");
+        assertEquals(true, myString.detectCapitalUse());
+    }
+
 
 
 
