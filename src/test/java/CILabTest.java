@@ -92,7 +92,4 @@ public class CILabTest {
         assertEquals(true, myString.detectCapitalUse());
     }
 
-
-
-
 }

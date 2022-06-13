@@ -25,7 +25,7 @@ public class CILab implements CILabInterface {
                             return false;
                         }
                     }
-                } else { //remaining should be lower case
+                } else { //remaining characters should be lower case
                     for (int i = 2; i < myString.length(); i++){
                         if (Character.isUpperCase(myString.charAt(i))){
                             return false;
@@ -39,10 +39,8 @@ public class CILab implements CILabInterface {
                     }
                 }
             }
-
         }
-        return true; //string length 1 or they it satisfies all conditions
-
+        return true; //string length 1 or it satisfies all conditions
     }
 
 }
