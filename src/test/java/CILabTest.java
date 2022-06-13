@@ -33,5 +33,36 @@ public class CILabTest {
         assertEquals(true, myString.detectCapitalUse());
     }
 
+    @Test
+    public void detectCapitalUseTest3() {
+        myString.setString("mIxEdCaSe");
+        assertEquals(false, myString.detectCapitalUse());
+    }
+
+    @Test
+    public void detectCapitalUseTest4() {
+        myString.setString("FIrsttwo");
+        assertEquals(false, myString.detectCapitalUse());
+    }
+
+    @Test
+    public void detectCapitalUseTest5() {
+        myString.setString("lasttWO");
+        assertEquals(false, myString.detectCapitalUse());
+    }
+
+    @Test
+    public void detectCapitalUseTest6() {
+        myString.setString("twoinTHemiddle");
+        assertEquals(false, myString.detectCapitalUse());
+    }
+
+    @Test
+    public void detectCapitalUseTest7() {
+        myString.setString("LOL");
+        assertEquals(true, myString.detectCapitalUse());
+    }
+
+
 
 }
