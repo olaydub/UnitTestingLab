@@ -21,6 +21,12 @@ public class CILabTest {
         myString = null;
     }
 
+    @Test
+    public void getStringTest1(){
+        myString.setString("equals");
+        assertEquals("equals", myString.getString());
+    }
+
     //This test checks a string with two capitals with lower case inbetween
     @Test
     public void detectCapitalUseTest1() {
